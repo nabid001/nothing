@@ -4,10 +4,140 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sunnyside</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <nav class="header-nav">
+        <div class="header-logo">
+          <img src="public/images/logo.svg" alt="">
+        </div>
+        <ul class="header-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Projects">Projects</a></li>
+        </ul>
+        <div class="button">
+          <a class="btn" href="#">CONTACT</a>
+        </div>
+        <div class="hamburger">
+          <!-- <img class="hamburger__image" src="" alt=""> -->
+          <i class="fa-solid fa-bars fa-xl" style="color: #788cb0;"></i>
+        </div>
+      </nav>
+      <div class="header-text">
+        <h1 class="header-text-bold">We are creatives</h1>
+        <img class="header-arrow-image" src="public/images/icon-arrow-down.svg" alt="">
+      </div>
+    </header>
+
+    <div class="mobile-nav active">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a href="#" class="moblie-nav__link">About</a></li>
+          <li><a href="#" class="moblie-nav__link">Service</a></li>
+          <li><a href="#" class="moblie-nav__link">Projects</a></li>
+        </ul>
+        <div class="mobile-nav-button">
+          <a href="#" class="moblie-nav__button">CONTACT</a>
+        </div>
+      </nav>
+    </div>
+    
+    <main>
+      <div class="main-container">
+        <div class="col col-1">
+          <div class="main__container-text">
+            <h2>Transform your brand</h2>
+            <p>We are a full-service creative agency specializing in helping brands grow fast.
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="col col-order">
+          <img src="/public/images/desktop/image-transform.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="/public/images/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="col col-1">
+          <div class="main__container-text">
+            <h2>Stand out to the right audience</h2>
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="col col-2">
+          <img src="/public/images/desktop/image-graphic-design.jpg" alt="">
+          <div class="col-2-content">
+            <h3>Graphic Design</h3>
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+        </div>
+        <div class="col col-2">
+          <img src="/public/images/desktop/image-photography.jpg" alt="">
+          <div class="col-2-content">
+            <h3>Photography</h3>
+            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="testimonial">
+      <h2>CLIENT TESTIMONIALS</h2>
+      <div class="testimonial-person">
+      <div class="testimonial-persons">
+          <img src="/public/images/image-emily.jpg" alt="">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h4>Emily R.</h4>
+          <h6>Marketing Director</h6>
+        </div>
+        <div class="testimonial-persons">
+          <img src="/public/images/image-thomas.jpg" alt="">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable</p>
+          <h4>Thomas S.</h4>
+          <h6>Chief Operating Officer</h6>
+        </div>
+        <div class="testimonial-persons">
+          <img src="/public/images/image-jennie.jpg" alt="">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h4>Jennie F.</h4>
+          <h6>Business Owner</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-images">
+        <img src="/public/images/desktop/image-gallery-milkbottles.jpg" alt="">
+      </div>
+      <div class="gallery-images">
+        <img src="/public/images/desktop/2.jpg" alt="">
+      </div>
+      <div class="gallery-images">
+        <img src="/public/images/desktop/image-gallery-cone.jpg" alt="">
+      </div>
+      <div class="gallery-images">
+        <img src="/public/images/desktop/image-gallery-sugarcubes.jpg" alt="">
+      </div>
+    </div>
+
+    <footer class="footer">
+      <h2>sunnyside</h2>
+      <div class="footer-nav">
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Projects</a>
+      </div>
+      <div class="footer-social-icon">
+        <i class="fa-brands fa-facebook fa-lg"></i>
+        <i class="fa-brands fa-instagram fa-lg"></i>
+        <i class="fa-brands fa-twitter fa-lg"></i>
+        <i class="fa-brands fa-pinterest fa-lg"></i>
+      </div>
+    </footer>
+  <script type="module" src="./src/main.js"></script>
   </body>
 </html>

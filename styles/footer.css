@@ -1,0 +1,37 @@
+.footer{
+    background-color: #90D2C9;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.footer h2{
+    color: #2B7463;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 1.885rem;
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2.95rem;
+}
+
+a,i{
+    color: #2B7463;
+    transition: color 0.3s ease;
+}
+
+i:hover{
+    color: white;
+}
+
+a:hover{
+    color: #FFF;
+}
+
+i{
+    padding: 10px;
+}
